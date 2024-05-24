@@ -1,5 +1,16 @@
-## [Para más informacion de ssl o AGPD revise el markdown &#34;PROJECTO PROG I BD&#34;](https://github.com/arley02/Treball_Projecte/blob/main/PROJECTO%20PROG%20I%20BD%20.md#esquema-de-seguridad)
+# **Matriz de usuarios**
 
-revisar el panel para ver en menu:
+## Medicos
 
-![1716240266926](image/Readme/1716240266926.png)
+el personal Medico en las tablas HISTORIAL_MEDICO, Diagnostico, RES/VIS pueden hacer SELECT, INSERT, UPDATE, DELETE pero en la tablas EQUIPAMIENTO, HABITACION, PLANTA, QUIROFANO, solo tendran permiso de SELECT.
+
+## Enfermeras
+
+El personal de enfermeras debe poder hacer un SELECT en las suguientes tablas: PACIENTE, HISTORIAL_MEDICO, DISAGNOSTICO, RES/VIS, HABITACION_VISTIDA, QUIROFANO_VISITADO, QUIROFANO, HABITACION, EQUIPAMIENTOS
+
+|   ROLES   | PERMISOS                            |
+| :--------: | ----------------------------------- |
+|  Medicos  | SELECT - INSERT - UPDATE - DELETE - |
+| Enfermeras |                                     |
+
+---
