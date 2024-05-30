@@ -6,8 +6,6 @@
 |          Medicos          |                 SELECT                 | EQUIPAMIENTO, HABITACION, PLANTA, QUIROFANO                                                                                     |
 |         Enfermeras         |                 SELECT                 | PACIENTE, HISTORIAL_MEDICO, DISAGNOSTICO, RES/VIS, HABITACION_VISTIDA, QUIROFANO_VISITADO, QUIROFANO, HABITACION, EQUIPAMIENTOS |
 |         Recepcion         |                 SELECT                 | RES/VIS, HABITACION_VISITADA, HABITACION                                                                                        |
-|         logopedas         |                 SELECT                 | PACIENTE, HISTORIAL_MEDICO, DIAGNOSTICO, RES/VIS                                                                                |
-|      fisioterapeutas      |                 SELECT                 | PACIENTE, HISTORIAL_MEDICO, DIAGNOSTICO, RES/VIS, HABITACION                                                                    |
 | Administrador informatico | todos los permisos de todas las tablas | todas las tablas del esquema                                                                                                    |
 | Administrador del hospital |           todos los permisos           | PERSONAL, EQUIPAMIENTO                                                                                                          |
 |  Conductor de ambulancia  |             SELECT- INSERT             | RES/VIS                                                                                                                         |
@@ -25,14 +23,6 @@ El personal de enfermeras deben poder hacer un SELECT en las siguientes tablas: 
 ## Recepcionista
 
 Recepcion tendra permisos de SELECT en las siguientes tablas: RES/VIS, HABITACION_VISITADA, HABITACION.
-
-## Logopedas
-
-los logopedas deben poder hacer un SELECT en las siguientes tablas: PACIENTE, HISTORIAL_MEDICO, DIAGNOSTICO, RES/VIS.
-
-## Fisioterapeutas
-
-los logopedas deben poder hacer un SELECT en las siguientes tablas: PACIENTE, HISTORIAL_MEDICO, DIAGNOSTICO, RES/VIS, HABITACION.
 
 ## Administrador informatico
 

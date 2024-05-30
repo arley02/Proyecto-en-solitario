@@ -4,7 +4,7 @@ en caso de descargar los ficheros verificar que todos se encuentran en el misma 
 
 para ejecutar el script es importante ejecutar solo el script "main_login.py"
 
-![1716236752793](image/Readme/1716236752793.png)
+![1716236752793](scripts\imagenes_scripts\1716236752793.png)
 
 ### importante!!!
 
