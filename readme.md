@@ -11,5 +11,5 @@
 7. [Bloc de consultas](https://github.com/arley02/Proyecto-en-solitario/tree/main/scripts)
 8. [Dummy data](https://github.com/arley02/Proyecto-en-solitario/tree/main/4%20-%20Dummy%20Data)
 9. Bloc de exportacion de datos
-10. [Documento final de instalacion](https://github.com/arley02/Proyecto-en-solitario/blob/main/PROJECTO%20PROG%20I%20BD%20.md)
+10. [Documento final de instalacion](https://github.com/arley02/Proyecto-en-solitario/blob/main/documento%20final%20de%20instalacion.md)
 11. Manual de usuario
