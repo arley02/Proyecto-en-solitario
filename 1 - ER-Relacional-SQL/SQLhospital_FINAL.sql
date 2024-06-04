@@ -130,29 +130,24 @@ CREATE TABLE QUIROFANO_VISITADA (
     FOREIGN KEY (id_quirofano) REFERENCES QUIROFANO(id_quirofano)
 );
 
--- Добавление внешнего ключа к таблице HABITACION
 ALTER TABLE HABITACION
 ADD CONSTRAINT fk_numero_planta FOREIGN KEY (numero_planta) REFERENCES PLANTA(numero_planta);
 
 ALTER TABLE HABITACION
 ADD CONSTRAINT fk_id_equipamiento FOREIGN KEY (id_equipamiento) REFERENCES EQUIPA(id_equipamiento);
 
--- Добавление внешнего ключа к таблице QUIROFANO
 ALTER TABLE QUIROFANO
 ADD CONSTRAINT fk_numero_planta_quirofano FOREIGN KEY (numero_planta) REFERENCES PLANTA(numero_planta);
 
 ALTER TABLE QUIROFANO
 ADD CONSTRAINT fk_id_equipamiento_quirofano FOREIGN KEY (id_equipamiento) REFERENCES EQUIPA(id_equipamiento);
 
--- Добавление внешнего ключа к таблице MEDICO
 ALTER TABLE MEDICO
 ADD CONSTRAINT fk_id_personal_medico FOREIGN KEY (id_personal) REFERENCES PERSONAL(id_personal);
 
--- Добавление внешнего ключа к таблице VARIO
 ALTER TABLE VARIO
 ADD CONSTRAINT fk_id_personal_vario FOREIGN KEY (id_personal) REFERENCES PERSONAL(id_personal);
 
--- Добавление внешнего ключа к таблице ENFERMERA
 ALTER TABLE ENFERMERA
 ADD CONSTRAINT fk_id_personal_enfermera FOREIGN KEY (id_personal) REFERENCES PERSONAL(id_personal);
 
@@ -162,14 +157,12 @@ ADD CONSTRAINT fk_id_medico_enfermera FOREIGN KEY (id_medico) REFERENCES MEDICO(
 ALTER TABLE ENFERMERA
 ADD CONSTRAINT fk_numero_planta_enfermera FOREIGN KEY (numero_planta) REFERENCES PLANTA(numero_planta);
 
--- Добавление внешнего ключа к таблице RES_VIS
 ALTER TABLE RES_VIS
 ADD CONSTRAINT fk_id_personal_res_vis FOREIGN KEY (id_personal) REFERENCES PERSONAL(id_personal);
 
 ALTER TABLE RES_VIS
 ADD CONSTRAINT fk_dni_paciente_res_vis FOREIGN KEY (dni_paciente) REFERENCES PACIENTE(dni_paciente);
 
--- Добавление внешнего ключа к таблице HISTORIAL_MEDICO
 ALTER TABLE HISTORIAL_MEDICO
 ADD CONSTRAINT fk_id_visita_historial FOREIGN KEY (id_visita) REFERENCES RES_VIS(id_visita);
 
@@ -182,14 +175,12 @@ ADD CONSTRAINT fk_codigo_diagnostico_historial FOREIGN KEY (codigo_diagnostico) 
 ALTER TABLE HISTORIAL_MEDICO
 ADD CONSTRAINT fk_dni_paciente_historial FOREIGN KEY (dni_paciente) REFERENCES PACIENTE(dni_paciente);
 
--- Добавление внешнего ключа к таблице HABITACION_VISITADA
 ALTER TABLE HABITACION_VISITADA
 ADD CONSTRAINT fk_id_visita_habitacion FOREIGN KEY (id_visita) REFERENCES RES_VIS(id_visita);
 
 ALTER TABLE HABITACION_VISITADA
 ADD CONSTRAINT fk_id_habitacion_habitacion FOREIGN KEY (id_habitacion) REFERENCES HABITACION(numero_habitacion);
 
--- Добавление внешнего ключа к таблице QUIROFANO_VISITADA
 ALTER TABLE QUIROFANO_VISITADA
 ADD CONSTRAINT fk_id_visita_quirofano FOREIGN KEY (id_visita) REFERENCES RES_VIS(id_visita);
 
