@@ -8,10 +8,9 @@ La creación del dummy data debe poder ejecutarse desde la aplicación como una 
 
 Nota: Actualmente el codigo ya se encuentra en integrado con el script principal que seria "main_login.py"
 
-
 # DUMMY DATA
 
-el objetivo del dummy data es como se menciono anteriormente crear datos ficticios para la demostracion del funcionamiento de la base de datos, si desea ver mar infomacion detallada de codigo del dummy data explicando la generacion de cada parte puede ir a este [enlace](https://github.com/arley02/Proyecto-en-solitario/blob/main/PROJECTO%20PROG%20I%20BD%20.md#dummy-data)
+el objetivo del dummy data es como se menciono anteriormente crear datos ficticios para la demostracion del funcionamiento de la base de datos, si desea ver mar infomacion detallada de codigo del dummy data explicando la generacion de cada parte puede ir a este [enlace](https://github.com/arley02/Proyecto-en-solitario/blob/main/documento%20final%20de%20instalacion.md)
 
 ```
 import psycopg2

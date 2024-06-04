@@ -23,5 +23,3 @@ Para llevar parte de la gestión del hospital de Blanes sabemos que:
 - Se quiere llevar un control de las visitas que los enfermos realizan a cada médico/a. Por eso y por cada día y por cada médico/a habrá que saber la hora de visita de cada uno de sus pacientes.
 - También se quiere llevar un control de las reservas de habitaciones de los pacientes a ingresar. Por eso y por cada una de las habitaciones se quiere saber sus reservas, es decir día previsto de ingreso, día previsto de salida y de qué paciente se trata.
 - Finalmente se quiere llevar un control de cada uno de los quirófanos y de las reservas previstas para realizar operaciones. Por eso y para cada uno de los quirófanos, se quiere saber por cada día y hora el médico que lo tiene reservado y el paciente al que se va a operar. No todos los pacientes que son ingresados deben operarse. Considere que cada operación la hace un solo médico y que es asistido por varios miembros del personal de enfermería.
-
-# ROLES DE USUARIOS + SQL
