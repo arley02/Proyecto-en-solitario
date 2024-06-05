@@ -5,6 +5,7 @@ from consultas_i_informes import *
 from Dummy import ejecutar_dummy
 from eliminar_dummy import verificar_eliminar
 from mantenimiento import mantenimiento
+from ampliacion import historial_paciente
 
 def login(credenciales):
     # Pedir usuario y contraseña para la conexión
@@ -24,10 +25,10 @@ def login(credenciales):
             print(host)
             print("-" * 20)
             x = " "
-            while x != "6":
+            while x != "7":
                 print("Menu Gestio Hospital")
                 print("-" * 20)
-                print("\n 1 . Manteniments\n 2 . Consultes i informes\n 3 . Exportacio de dades\n 4 . Executar prova de dades\n 5 . Eliminar dades \n 6 . Sortir\n\n")
+                print("\n 1 . Manteniments\n 2 . Consultes i informes\n 3 . Exportacio de dades\n 4 . Executar prova de dades\n 5 . Eliminar dades \n 6 . ver historial de un paciente \n 7. salir\n\n")
                 x = input("Entra una opcio: ")
                 if x == "1":
                     system("cls")
@@ -42,6 +43,8 @@ def login(credenciales):
                 elif x == "5":
                     verificar_eliminar(username, password, host)
                 elif x == "6":
+                    historial_paciente(username, password, host)
+                elif x == "7":
                     system("cls")
                     print("-" * 20)
                     print("session cerrada")

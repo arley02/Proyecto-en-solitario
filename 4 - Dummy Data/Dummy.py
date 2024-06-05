@@ -1,5 +1,6 @@
 import psycopg2
 from faker import Faker
+from os import system
 import random
 
 def ejecutar_dummy(username, password, host):
@@ -79,7 +80,7 @@ def ejecutar_dummy(username, password, host):
 
     # Generar datos para la tabla PACIENTE
     paciente_data = []
-    for _ in range(50000):
+    for _ in range(10000):
         dni_letters = fake.random_element(elements=('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'))
         dni_numbers = fake.random_number(digits=8)
         dni = f"{dni_numbers}{dni_letters}"
@@ -108,4 +109,7 @@ def ejecutar_dummy(username, password, host):
     conn.commit()
     cur.close()
     conn.close()
+    system("cls")
+    print("-"*30)
     print("Todas las operaciones se han completado. La conexión con la base de datos se ha cerrado.")
+    print("-"*30)
